@@ -1,0 +1,687 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(14 14 14);
+  padding: 8px 45px;
+  position: relative;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  position: relative;
+  top: -34px;
+}
+.logo img {
+  height: 150px;
+  filter: brightness(115%);
+}
+.buttons select {
+  height: 32px;
+  width: 123px;
+  border-radius: 40px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(32, 32, 32, 0.699);
+  border: 1px solid rgb(104, 102, 102);
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
+}
+select#langs {
+  
+  background-image: url(/Netflix/Assets/translate.png);
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+  z-index: 5;
+}
+.buttons button {
+  height: 32px;
+  width: 76px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 600px) {
+  .buttons select {
+    width: 50px;
+    overflow: hidden;
+  }
+  .logo img {
+    height: 120px;
+    position: relative;
+    top: 2px;
+  }
+  .buttons {
+    gap: 2px;
+  }
+}
+@media only screen and (max-width: 1160px) {
+  .bg {
+    margin: auto;
+    position: relative;
+    left: -33px;
+    right: -33px;
+    height: 40vh;
+  }
+  /* i was abover this  */
+}
+@media only screen and (min-width: 1160px) {
+  .bg {
+    height: 59vh !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .bg {
+    top: 10px;
+    position: relative;
+  }
+}
+
+.bg {
+  background-image: url("/Netflix/Assets/Images/bg/wednesday.avif");
+  height: 50vh;
+  min-width: 150px;
+  border-radius: 0px 0px 200px 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* transition: all ease 0.5s ; */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  background-color: black;
+  position: relative;
+  top: -68px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 405px #a52a2a5c;
+  filter: drop-shadow(4px 0px 10px brown);
+  border: 1px solid white;
+  background-position: center;
+  width: 94vw;
+}
+.bg background-image {
+  min-width: 150px;
+  /* filter:drop-shadow(2px 4px 6px black); */
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  color: white;
+  bottom: 10px;
+  height: 50%;
+}
+/* adjust div hero to bottom  */
+.hero:first-child {
+  font-family: "Poppins", serif;
+  width: 34vw;
+  line-height: 57px;
+  word-spacing: 20px;
+  text-shadow: 1px 1px 4px rgb(92, 92, 92);
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: normal;
+}
+.hero p {
+  font-family: "Poppins", serif;
+  width: 36vw;
+  line-height: 57px;
+  word-spacing: 0px;
+  text-shadow: 1px 1px 10px rgb(92, 92, 92);
+  text-align: center;
+  font-weight: 500;
+  font-size: 19px;
+  font-style: normal;
+}
+@media only screen and (max-width: 1236px) {
+  .hero {
+    position: absolute;
+    bottom: 20px;
+  }
+  .hero h1 {
+    font-size: 50px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 792px) {
+  .hero {
+    position: absolute;
+    bottom: 30px;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+  .hero .secondchild {
+    font-size: 13px;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 723px) {
+  .hero {
+    position: absolute;
+    bottom: 15px;
+  }
+  .hero h1 {
+    font-size: 36px;
+    width: 90vw;
+    line-height: 40px;
+  }
+  .secondchild p {
+    font-size: 16px;
+    line-height: 20px;
+    width: 55vw;
+  }
+}
+.info {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  top: -39px;
+  flex-direction: column;
+}
+.txt {
+  color: rgb(233, 208, 208);
+  font-size: 17px;
+  width: 100vw;
+}
+.cred {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35vw;
+  height: 20vh;
+  margin: auto;
+}
+.cred input {
+  height: 53px;
+  background-color: #161616;
+  /* z-index: 5; */
+  position: absolute;
+  border: 2px solid rgb(61, 61, 61);
+  border-radius: 30px;
+  width: 350px;
+  box-sizing: border-box;
+  padding: 10px 0px 10px 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.credbaap {
+  display: flex;
+  align-items: center;
+}
+.credbaap button {
+  background-color: red;
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0);
+  width: 117px;
+  /* z-index: 5; */
+  font-family: "Poppins", serif;
+  height: 53px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 30px;
+}
+@media only screen and (max-width: 1007px) {
+  .cred input {
+    width: 80vw;
+    position: relative;
+    /* left: -10px; */
+  }
+  .credbaap button {
+    bottom: 50px;
+    width: 20vw;
+    margin-top: 16px;
+  }
+  .credbaap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+.grid {
+  display: grid;
+  grid-template-columns: 180px 190px 190px 190px 190px 190px 190px 190px;
+  justify-content: start;
+  margin: 0 auto;
+  /* overflow: scroll; */
+  grid-template-rows: 52px 281px;
+  background-size: cover;
+  grid-auto-flow: row;
+  /* -ms-overflow-style: none; */
+  overflow-x: auto;
+  padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+  box-sizing: content-box; /* So the width will be 100% + 17px */
+  /* scroll bar hidden */
+  column-gap: 10px;
+  /* height: 420px; */
+  /* background-color: aqua; */
+}
+.parent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.heading {
+  font-size: 33px;
+  grid-row: 1/2;
+  font-family: "Poppins", serif;
+  grid-column: 1/9;
+  font-weight: 700;
+  color: white;
+  /* justify-items: center;
+  align-content: center; */
+}
+
+.show {
+  background-image: url(/Netflix/Assets/Images/shows/kss.jpg);
+  grid-row: 2/3;
+  grid-column: 1/2;
+  background-position: center center;
+  background-size: cover;
+  top: 10px;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 4px black;
+  position: relative;
+  padding: 10px;
+  border-radius: 7%;
+  box-shadow: 2px 2px 10px black;
+  background-repeat: no-repeat;
+  height: 240px;
+  /* transition: content-box 1s ease-in ; */
+  transition: all 0.3s cubic-bezier(0.31, 0.26, 0.91, 0.29) ;
+}
+.show:hover {
+  /* border: 1px solid white; */
+  box-sizing: content-box;
+  transform:translateY(5px) scale(1.01);
+}
+.do-patti {
+  order: 3;
+  background-image: url(/Netflix/Assets/Images/shows/do-patti.jpg);
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+.devara {
+  position: relative;
+  order: 4;
+  background-image: url(/Netflix/Assets/Images/shows/devara.jpg);
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+.meiyazhagan {
+  background-image: url(/Netflix/Assets/Images/shows/meiyazhagan.jpg);
+  grid-row: 2/3;
+  grid-column: 4/5;
+}
+.nayanthara {
+  background-image: url(/Netflix/Assets/Images/shows/nayanthara.jpg);
+  grid-row: 2/3;
+  grid-column: 5/6;
+}
+.goat {
+  background-image: url(/Netflix/Assets/Images/shows/goat.jpg);
+  grid-row: 2/3;
+  grid-column: 6/7;
+}
+/* .miketyson {
+  background-image: url(/Netflix/Assets/Images/shows/miketyson.jpg);
+  grid-row: 2/3;
+  grid-column: 7/8;
+} */
+.kkm {
+  background-image: url(/Netflix/Assets/Images/shows/khel\ khel\ main.jpg);
+  grid-row: 2/3;
+  grid-column: 7/8;
+}
+.kareena {
+  background-image: url(/Netflix/Assets/Images/shows/kareena.jpg);
+  grid-row: 2/3;
+  grid-column: 8/9;
+}
+.grid2 {
+  margin-top: 20px;
+}
+
+
+.moneyheist {
+  background-image: url(/Netflix/Assets/Images/shows/moneyheist.jpg);
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+.st {
+  background-image: url(/Netflix/Assets/Images/shows/st.jpg);
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+.lucifer {
+  background-image: url(/Netflix/Assets/Images/shows/lucifer.jpg);
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+.qot {
+  background-image: url(/Netflix/Assets/Images/shows/qot.jpg);
+  grid-row: 2/3;
+  grid-column: 4/5;
+}
+.catopper {
+  background-image: url(/Netflix/Assets/Images/shows/catopper.jpg);
+  grid-row: 2/3;
+  grid-column: 5/6;
+}
+.heeramandi {
+  background-image: url(/Netflix/Assets/Images/shows/heeramandi.jpg);
+  grid-row: 2/3;
+  grid-column: 6/7;
+}
+.demon {
+  background-image: url(/Netflix/Assets/Images/shows/demon.jpg);
+  grid-row: 2/3;
+  grid-column: 7/8;
+}
+.sector36 {
+  background-image: url(/Netflix/Assets/Images/shows/sector36.jpg);
+  grid-row: 2/3;
+  grid-column: 8/9;
+}
+.reasons {
+  margin-top: 20px;
+  height: 220px;
+  width: 85%;
+  font-size: 33px;
+  flex-direction: column;
+  font-family: "Poppins", serif;
+  display: flex;
+  flex-wrap: wrap;
+
+  font-weight: 700;
+  color: white;
+}
+@media only screen and (max-width: 960px) {
+  .reasons {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .reasheading {
+    font-size: 29px;
+  }
+  .boxes {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .boxes .reasbox {
+    width: 69vw;
+    background-position: bottom 29px right 19px;
+    height: 100px;
+    width: 100%;
+  }
+}
+.parent {
+  display: flex;
+  position: relative;
+  margin: auto;
+  justify-content: center;
+}
+.reasbox {
+  height: 140px;
+  background-color: rgb(41 39 39);
+  border: 1px solid rgb(81 81 81);
+  border-radius: 28px;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.reas-first {
+  background-image: url(/Netflix/Assets/Images/reas-box-hand.png);
+}
+.reas-sec {
+  background-image: url(/Netflix/Assets/Images/res-box-handshake.png);
+}
+.reas-third {
+  background-image: url(/Netflix/Assets/Images/res-box-heart.png);
+}
+.reas-fourth {
+  background-image: url(/Netflix/Assets/Images/res-box-tv.png);
+}
+.reasbox {
+  background-repeat: no-repeat;
+  padding: 20px;
+  width: 85%;
+  box-sizing: border-box;
+  background-position: bottom 17px right 10px;
+  /* background-attachment:fixed; */
+}
+
+.boxes {
+  overflow: hidden;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.parentfaq {
+  position: relative;
+  top: 21px;
+}
+.faq {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+/* .parentfaq{
+  position: absolute;
+  margin:0 auto;
+  width:85vw;
+  display: flex;
+  justify-content: center;
+} */
+ .plus{
+  cursor: pointer;
+ }
+ select{
+  cursor: pointer;
+ }
+ button{
+  cursor: pointer ;
+ }
+.questions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 70vh;
+  width: 94vw;
+  overflow: hidden;
+}
+@media only screen and (max-width: 960px) {
+  .heading {
+    font-size: 29px;
+    width: 84vw;
+  }
+
+  .questions {
+    width: 91vw;
+    position: relative;
+    left: -5px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .questions {
+    width: 77vw;
+    position: relative;
+    left: -5px;
+  }
+}
+.quesfaq {
+  background-position: bottom 14px right 20px;
+  background-repeat: no-repeat;
+  background-color: rgb(41 39 39);
+  border: 1px solid rgb(81 81 81);
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  display: flex;
+  justify-items: flex-end;
+  border-radius: 17px;
+  margin: 4px;
+  box-sizing: border-box;
+  font-size: 18px;
+  color: white;
+  font-family: "Poppins", serif;
+}
+.plus {
+  position: relative;
+  font-size: 30px;
+  width: 21px;
+  top: 2px;
+}
+.getstarted {
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.getstarted button {
+  background-color: red;
+  border: 1px solid rgba(255, 255, 255, 0);
+  height: 45px;
+  width: 146px;
+  font-size: 20px;
+  color: white;
+  border-radius: 20px;
+}
+.getstarted p {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Poppins", serif;
+}
+.footer{
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+  justify-content: center;
+  width: 100vw;
+  font-family: "Poppins", serif;
+  height: 650px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.footer:first-child{
+  justify-items: flex-start;
+}
+.call{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  color: #FFFFFFB3;
+}
+.footer:nth-child(1){display: fe;
+  align-self: flex-start;
+}
+.li{
+  height: 200px;
+  color: #ffffffb3;
+  list-style-type: none;
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  /* justify-items: center; */
+  justify-content: flex-start;
+  align-items: center;
+  align-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.li li{
+  height: 37px;
+  width: 182px;
+}
+.langsend select {
+  height: 32px;
+  width: 123px;
+  border-radius: 40px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(32, 32, 32, 0.699);
+  border: 1px solid rgb(104, 102, 102);
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
+}
+.netflix{
+  height: 50px;display:flex;
+  align-items: center;
+  width: 100%;
+  color: rgb(255, 255, 255);
+}
+@media only screen and (max-width:797px){
+  .footer{
+    width: 90vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .li{
+    height:36vh;
+    display: flex;
+    align-content: flex-start;
+
+    width: 100%;
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width:440px){
+  .footer{
+    width: 90vw;
+    height: 150vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .li{
+    height:90vh;
+    display: flex;
+    width: 90vw;
+    align-content: flex-start;
+    flex-direction: row;
+  }
+}
